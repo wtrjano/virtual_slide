@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>My Virtual Slide</title>
+    <script src="https://cdn.jsdelivr.net/npm/openseadragon@4.1/build/openseadragon/openseadragon.min.js"></script>
+</head>
+<body>
+    <div id="openseadragon1" style="width: 100%; height: 95vh; background: #333;"></div>
+
+    <script type="text/javascript">
+        var viewer = OpenSeadragon({
+            id: "openseadragon1",
+            prefixUrl: "https://cdn.jsdelivr.net/npm/openseadragon@4.1/build/openseadragon/images/",
+            tileSources: {
+                type: 'image',
+                url: https://docs.google.com/uc?export=download&id=1uHBZzHd5NNsZC0JLVUPwe_V41XqI0-Pt,
+                buildPyramid: false // OME-TIFF自体がピラミッドなのでfalse
+            },
+            showNavigator: true // 右下にナビゲーターを表示
+        });
+    </script>
+</body>
+</html>
