@@ -15,9 +15,7 @@
             tileSources: {
                 type: 'image',
                 url: 'Image_20x_BF_01_raw.ome.tif',
-                buildPyramid: false, // OME-TIFF自体がピラミッドなのでfalse
-                crossOriginPolicy: 'Anonymous', // CORS対策
-                loadTilesWithAjax: false   // Ajaxでの読み込みを強制
+                buildPyramid: false // OME-TIFF自体がピラミッドなのでfalse
             },
             showNavigator: true // 右下にナビゲーターを表示
         });
