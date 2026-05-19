@@ -16,6 +16,8 @@
                 type: 'image',
                 url: 'https://raw.githubusercontent.com/wtrjano/virtual_slide/main/Mfas_liver.ome.tif',
                 buildPyramid: false // OME-TIFF自体がピラミッドなのでfalse
+                crossOriginPolicy: 'Anonymous', // CORS対策
+                loadTilesWithAjax: true         // Ajaxでの読み込みを強制
             },
             showNavigator: true // 右下にナビゲーターを表示
         });
